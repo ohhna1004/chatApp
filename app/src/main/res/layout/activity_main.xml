@@ -1,18 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/LoginActivity_textview_login"
+        android:layout_toRightOf="@id/LoginActivity_textview_login"
+        android:src="@drawable/icon_green" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/LoginActivity_button_login"
+        android:layout_marginTop="-211dp"
+        android:layout_toStartOf="@+id/LoginActivity_textview_login"
+        android:layout_toLeftOf="@id/LoginActivity_textview_login"
+        android:src="@drawable/icon_pink" />
+
     <TextView
+        android:id="@+id/LoginActivity_textview_appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:text="너와 나의 연결고리"
+        android:textColor="#37474f"
+        android:textSize="8pt" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/LoginActivity_textview_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="로그인"
+        android:textColor="#37474f"
+        android:textSize="10pt" />
+    <EditText
+        android:id="@+id/LoginActivity_edittext_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/squre"
+        android:hint="  이메일" />
+
+    <EditText
+        android:id="@+id/LoginActivity_edittext_passwd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp"
+        android:background="@drawable/squre"
+        android:hint="  비밀번호" />
+
+    <Button
+        android:id="@+id/LoginActivity_button_login"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="211dp"
+        android:background="@drawable/clearsqure2"
+        android:text="로그인"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#616161"/>
+
+    <Button
+        android:id="@+id/LoginActivity_button_autologin"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="158dp"
+        android:background="@drawable/clearsqure2"
+        android:text="자동로그인"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#616161"/>
+
+    <Button
+        android:id="@+id/LoginActivity_button_join"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/clearsqure"
+        android:text="회원가입"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#616161"/>
+</RelativeLayout>

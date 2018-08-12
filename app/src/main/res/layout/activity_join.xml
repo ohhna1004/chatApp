@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".JoinActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/JoinActivity_textview_appName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="너와 나의 연결고리"
+                android:textColor="#37474f"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/JoinActivity_textview_join"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="회원가입"
+                android:textColor="#37474f"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/JoinActivity_textview_id"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/JoinActivity_edittext_email"
+                android:text="ID"
+                android:textColor="#37474f"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/JoinActivity_edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/squre"
+                android:hint="  이메일형식으로 입력해주시오" />
+
+            <TextView
+                android:id="@+id/JoinActivity_textview_name"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/JoinActivity_edittext_email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="성명"
+                android:textColor="#37474f"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/JoinActivity_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/squre"
+                android:hint="  성함을 입력해주시오" />
+            <TextView
+                android:id="@+id/JoinActivity_textview_passwd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/JoinActivity_edittext_passwd"
+                android:layout_toLeftOf="@+id/JoinActivity_edittext_passwd"
+                android:layout_toStartOf="@+id/JoinActivity_edittext_passwd"
+                android:text="비밀번호"
+                android:textColor="#37474f"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/JoinActivity_edittext_passwd"
+                android:layout_width="396dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/squre"
+                android:hint="  6자 이상 입력하시오" />
+
+            <TextView
+                android:id="@+id/JoinActivity_textview_ckeck_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/JoinActivity_button_login"
+                android:layout_toStartOf="@+id/JoinActivity_edittext_passwd"
+                android:layout_toLeftOf="@+id/JoinActivity_edittext_passwd"
+                android:text="비밀번호 확인"
+                android:textColor="#37474f"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/JoinActivity_edittext_check_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/JoinActivity_edittext_passwd"
+                android:layout_alignLeft="@+id/JoinActivity_edittext_passwd"
+                android:background="@drawable/squre"
+                android:hint="  동일한 비밀번호를 입력 후 확인을 누르시오"/>
+
+            <Button
+                android:id="@+id/JoinActivity_button_check_passwd"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/clearsqure2"
+                android:text="확인"
+                android:textColor="#616161"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/JoinActivity_button_join"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/clearsqure"
+                android:text="회원가입"
+                android:textColor="#616161"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
