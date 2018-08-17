@@ -11,21 +11,21 @@
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:layout_toEndOf="@+id/LoginActivity_textview_login"
-        android:layout_toRightOf="@id/LoginActivity_textview_login"
+        android:layout_toEndOf="@+id/MainActivity_textview_login"
+        android:layout_toRightOf="@id/MainActivity_textview_login"
         android:src="@drawable/icon_green" />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_below="@+id/LoginActivity_button_login"
+        android:layout_below="@+id/MainActivity_button_login"
         android:layout_marginTop="-211dp"
-        android:layout_toStartOf="@+id/LoginActivity_textview_login"
-        android:layout_toLeftOf="@id/LoginActivity_textview_login"
+        android:layout_toStartOf="@+id/MainActivity_textview_login"
+        android:layout_toLeftOf="@id/MainActivity_textview_login"
         android:src="@drawable/icon_pink" />
 
     <TextView
-        android:id="@+id/LoginActivity_textview_appName"
+        android:id="@+id/MainActivity_textview_appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -37,7 +37,7 @@
         android:textSize="8pt" />
 
     <TextView
-        android:id="@+id/LoginActivity_textview_login"
+        android:id="@+id/MainActivity_textview_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -47,7 +47,7 @@
         android:textColor="#37474f"
         android:textSize="10pt" />
     <EditText
-        android:id="@+id/LoginActivity_edittext_email"
+        android:id="@+id/MainActivity_edittext_email"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
@@ -58,7 +58,7 @@
         android:hint="  이메일" />
 
     <EditText
-        android:id="@+id/LoginActivity_edittext_passwd"
+        android:id="@+id/MainActivity_edittext_passwd"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
@@ -68,7 +68,7 @@
         android:hint="  비밀번호" />
 
     <Button
-        android:id="@+id/LoginActivity_button_login"
+        android:id="@+id/MainActivity_button_login"
         android:layout_width="385dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -81,30 +81,22 @@
         android:textStyle="bold"
         android:textColor="#616161"/>
 
-    <Button
-        android:id="@+id/LoginActivity_button_autologin"
-        android:layout_width="385dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="158dp"
-        android:background="@drawable/clearsqure2"
-        android:text="자동로그인"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:textColor="#616161"/>
+    <CheckBox
+        android:id="@+id/MainActivity_checkBox_autologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MainActivity_button_login"
+        android:text="자동로그인" />
 
     <Button
-        android:id="@+id/LoginActivity_button_join"
+        android:id="@+id/MainActivity_button_join"
         android:layout_width="385dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="147dp"
         android:background="@drawable/clearsqure"
         android:text="회원가입"
+        android:textColor="#616161"
         android:textSize="18dp"
-        android:textStyle="bold"
-        android:textColor="#616161"/>
+        android:textStyle="bold" />
 </RelativeLayout>

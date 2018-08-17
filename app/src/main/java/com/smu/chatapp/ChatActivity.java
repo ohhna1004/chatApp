@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+package com.smu.chatapp;
 
 public class ChatActivity {
 }
